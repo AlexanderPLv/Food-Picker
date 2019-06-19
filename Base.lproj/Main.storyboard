@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dinner-by-Heston-Blumenthal-Private-Dining-Room-Image3.-700x500" translatesAutoresizingMaskIntoConstraints="NO" id="LRk-bt-dcv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-nR-Jrs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl5-iV-oqq">
+                                <rect key="frame" x="134" y="712" width="160" height="50"/>
+                                <color key="backgroundColor" red="0.06683137570948286" green="0.79774530440414504" blue="0.084540826367161329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="0xe-JU-3gX"/>
+                                    <constraint firstAttribute="height" constant="50" id="77f-Ua-8Wl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Choose A Food">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapChooseButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtO-tN-HpL"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today`s choice is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8S-wl-kdd">
+                                <rect key="frame" x="24" y="78" width="370" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="YHs-KE-4lv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs0-P8-Xj9">
+                                <rect key="frame" x="20" y="161" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Fy0-tR-PfU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="aQp-hE-8QX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gs0-P8-Xj9" secondAttribute="trailing" constant="20" id="3pN-3e-otg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cl5-iV-oqq" secondAttribute="bottom" constant="100" id="9ib-g9-IYr"/>
+                            <constraint firstItem="Gs0-P8-Xj9" firstAttribute="top" secondItem="j8S-wl-kdd" secondAttribute="bottom" constant="8" id="AiK-mm-nGM"/>
+                            <constraint firstAttribute="bottom" secondItem="LRk-bt-dcv" secondAttribute="bottom" id="DoJ-a1-unR"/>
+                            <constraint firstItem="LRk-bt-dcv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EWn-pp-BdN"/>
+                            <constraint firstItem="Gs0-P8-Xj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mgz-Se-3qj"/>
+                            <constraint firstItem="j8S-wl-kdd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="Mtm-GT-EFS"/>
+                            <constraint firstItem="cl5-iV-oqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="VKX-QO-wAK"/>
+                            <constraint firstItem="j8S-wl-kdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZGN-9F-MDL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cl5-iV-oqq" secondAttribute="trailing" constant="120" id="ZRa-3a-c7g"/>
+                            <constraint firstItem="j8S-wl-kdd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qLi-vQ-w07"/>
+                            <constraint firstItem="LRk-bt-dcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zJM-xH-A2V"/>
+                            <constraint firstItem="LRk-bt-dcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zW3-MT-tmR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="cl5-iV-oqq" id="TXL-7o-Ts0"/>
+                        <outlet property="foodTypeLabel" destination="Gs0-P8-Xj9" id="cLG-JW-XMh"/>
+                        <outlet property="todaysChoiceLabel" destination="j8S-wl-kdd" id="Ut1-hC-RhF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dinner-by-Heston-Blumenthal-Private-Dining-Room-Image3.-700x500" width="700" height="500"/>
+    </resources>
+</document>
